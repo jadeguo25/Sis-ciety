@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+    rel="stylesheet">
+  <title>Registration</title>
+</head>
+
+<body>
+  <div id="logoDiv">
+    <div><a href="index.html"><img id="logo" src="images/Sis-ciety.png"></a></div>
+  </div>
+  <nav>
+    <p class="navigationT"><a href="index.html">Home</a></p>
+    <p>|</p>
+    <p class="navigationT"><a href="discover.html">Discover</a></p>
+    <p>|</p>
+    <p class="navigationT"><a href="#">Sign up/Sign in</a></p>
+  </nav>
+
+  <div id="form">
+    <h2 class="neuton-regular" style="font-size:3em">REGISTRATION</h2>
+  <form name="registration" method="post" action="https://httpbin.org/post">
+    <fieldset style="width:fit-content;">
+      <legend style="font-family: 'Noto Sans', sans-serif;">Register</legend>
+      <label>First Name
+        <span style="color: red;">*</span>
+        :</label>
+      <input type="text" name="firstName" placeholder="Enter your first name" required>
+      <br><br>
+
+      <label>Last Name<span style="color:red;" >*</span>:</label>
+      <input type="text" name="lastName" placeholder="Enter your last name" required>
+      <br><br>
+
+      <label>Email<span style="color:red;">*</span>:</label>
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <br><br>
+
+      <label>Age:</label>
+      <input type="number" name="age" min="0" max="120">
+      <br><br>
+
+      <!--using the same name=grouping(shows as array)-->
+      <label>Fields of Interest:</label>
+      <br><br>
+      <input type="checkbox" name="fields" id="law" value="law">
+      <label for="law">Law</label>
+      <!--value shows up at the end-->
+      <input type="checkbox" name="fields" id="healthcare" value="healthcare">
+      <label for="healthcare">Healthcare</label>
+      <input type="checkbox" name="fields" id="technology" value="technology">
+      <label for="technology">Technology</label>
+      <input type="checkbox" name="fields" id="business" value="business">
+      <label for="business">Business/Finance</label>
+      <input type="checkbox" name="fields" id="education" value="education">
+      <label for="education">Education</label>
+      <input type="checkbox" name="fields" id="science" value="science">
+      <label for="science">Science/Research</label>
+      <input type="checkbox" name="fields" id="engineering" value="engineering">
+      <label for="science">Engineering</label>
+      <input type="checkbox" name="fields" id="arts" value="arts">
+      <label for="science">Arts/Entertainment</label>
+      <input type="checkbox" name="fields" id="social" value="social">
+      <label for="science">Social Services</label>
+      <input type="checkbox" name="fields" id="govpol" value="govpol">
+      <label for="science">Governments/Public Administration</label>
+      <input type="checkbox" name="fields" id="env" value="env">
+      <label for="science">Agriculture/Environment</label>
+      <input type="checkbox" name="fields" id="construction" value="construction">
+      <label for="science">Construction/Trades</label>
+      <input type="checkbox" name="fields" id="comm" value="comm">
+      <label for="science">Communication/Media</label>
+      <br><br>
+      <!--radio=one choice only(but only if name is same)-->
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="f">
+      <!--recorded as 'f' in final data collection (value)-->
+      <label>Female</label>
+      <!--id/for allows clickable text to choose option-->
+      <input type="radio" name="gender" id="m" value="m">
+      <label for="m">Male</label>
+      <!--id and for must match; must be unique to each label-->
+      <input type="radio" name="gender" value="o">
+      <label for="">Other</label>
+      <input type="text" name="gender">
+      <br><br><br>
+      <input type="submit" value="Register">
+      <input type="reset" value="Clear">
+    </fieldset>
+  </div>
+
+
+
+  </form>
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+  h2 {
+    font-family: 'Lora', serif;
+  }
+
+  h3 {
+    font-family: 'Lora', serif;
+    line-height: 10%;
+    font-size: 1.5em;
+  }
+
+  a {
+    color: #2c6e73;
+  }
+  body {
+    background-color: #ff8585;
+    margin: 0;
+    padding: 0;
+  }
+  
+  label {
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .neuton-regular {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  nav {
+    width: 100%;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f45d5d;
+    font-size: 20px;
+    z-index: 2;
+    position: sticky;
+  }
+  
+  footer {
+    background-color: #f45d5d;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+
+  }
+  
+  footer p {
+    color: #ffffbd;
+  }
+  
+  p {
+    font-family: 'Noto Sans', sans-serif;
+  
+  }
+  
+  nav p {
+    font-family: 'Lora', serif;
+    color: #ffffbd;
+    font-size: 1.2em;
+  }
+  
+  /* class*/
+  .ppictures {
+    width: 50%;
+    display:block;
+    margin: auto;
+    
+    align-self: center;
+  }
+  
+  .profiles {
+    width: 30%;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .learn {
+    background-color: #f45d5d; 
+  border: none;
+  color: white;
+  padding: 0.2em 0.5em;
+  text-align: center;
+  text-decoration: none;
+  }
+  
+  
+  /* id*/
+  #form {
+    width:85%;
+    margin: auto;
+  }
+
+  #section1 {
+    background-color:#fff1d5;
+    width:90%;
+    padding-top: 12%;
+    padding-bottom: 12%;
+    padding-left:10%;
+  }
+
+#section2 {
+    padding-left: 3em;
+    display:flex;
+}
+  #logoDiv {
+    background-color: #f45d5d;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #sub :hover {
+    color: #f45d5d;
+  }
+  
+  #med {
+    background-color: #fb7373;
+    padding: 1.2em 2em 1.2em 2em;
+  }
+  
+  /* Creates an underline when hovering over text with an <a> tag in the navigation */
+  nav a {
+    position: relative;
+    color: beige;
+    text-decoration: none;
+  }
+  
+  nav a::before {
+    content: '';
+    background-color: beige;
+    border-radius: 5px;
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    transition: width 300ms ease-in-out;
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+  }
